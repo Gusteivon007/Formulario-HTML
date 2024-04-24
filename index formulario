@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script>
+
+        function senai() {  
+
+            $nome = this.Form1.fNome.value;
+
+            $senha = this.Form1.fSenha.value;
+            
+            if (($nome == "SENAI") && ($senha == "sumare")){
+                window.location.href="http://127.0.0.1:5500/paginas/formulario.html"
+                return false;
+            }
+            else {
+
+                window.location.href="http://127.0.0.1:5500/paginas/erro.html"
+                return false;
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
